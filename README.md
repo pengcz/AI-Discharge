@@ -16,6 +16,34 @@ in large systems such as long sparks and lightning.
 This project is intended to organize data and tools for applying AI methods to
 these problems.
 
+## Clone and Update
+
+To clone this repository from GitHub:
+
+```bash
+git clone https://github.com/pengcz/AI-Discharge.git
+cd AI-Discharge
+```
+
+To update an existing local copy with the newest code from GitHub:
+
+```bash
+cd AI-Discharge
+git pull origin main
+```
+
+To check which branch you are using:
+
+```bash
+git branch
+```
+
+The main development branch is expected to be:
+
+```text
+main
+```
+
 ## Research Motivation
 
 Classical discharge simulation solves the governing equations directly. This is
