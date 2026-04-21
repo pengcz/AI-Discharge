@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Large simulation and ML artifacts
+data/raw_silo/*
+data/interim_npz/*
+data/processed/*
+models/*
+reports/figures/*
+*.silo
+*.npz
+*.npy
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Keep directory placeholders
+!data/raw_silo/.gitkeep
+!data/interim_npz/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!reports/figures/.gitkeep
+
+# Local files
+.DS_Store
+*.log
+

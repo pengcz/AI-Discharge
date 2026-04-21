@@ -1,0 +1,28 @@
+# Baseline training configuration.
+
+experiment_name: baseline_channel_segmentation
+seed: 42
+
+data:
+  dataset_dir: data/processed
+  label_dir: labels
+  input_variables:
+    - e
+    - electric_fld
+  target: channel_mask
+  train_fraction: 0.8
+  val_fraction: 0.1
+  test_fraction: 0.1
+
+model:
+  name: small_unet
+  spatial_dim: 2
+  input_channels: 2
+  output_channels: 1
+
+training:
+  batch_size: 4
+  epochs: 50
+  learning_rate: 1.0e-3
+  loss: bce_dice
+

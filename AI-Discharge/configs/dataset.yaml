@@ -1,0 +1,35 @@
+# Dataset configuration for discharge ML experiments.
+
+project_name: AI-Discharge
+
+paths:
+  raw_silo_dir: data/raw_silo
+  interim_npz_dir: data/interim_npz
+  processed_dir: data/processed
+  labels_dir: labels
+
+conversion:
+  variables:
+    - e
+    - electric_fld
+    - phi
+    - temperature
+    - pressure
+  min_pixels: 512
+  crop:
+    enabled: false
+    r_min: [0.0, 0.0, 0.0]
+    r_max: [1.0, 1.0, 1.0]
+
+labels:
+  channel_variable: e
+  channel_threshold: 1.0e18
+  min_component_cells: 10
+
+metadata:
+  pressure_bar: null
+  gas_temperature_K: null
+  applied_voltage_V: null
+  field_amplitude_V_per_m: null
+  gas_dynamics: false
+
