@@ -31,4 +31,10 @@ reports/figures/*
 # Local files
 .DS_Store
 *.log
+.codex
 
+# Local research workspaces kept next to this repository
+/Tools_Peng/
+/VisitPlot/
+/afivo-streamer/
+/cocydimo/
